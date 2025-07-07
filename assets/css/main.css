@@ -1310,6 +1310,9 @@ margin-bottom: -300px;
   z-index: 905;
 }
 
+.intro-video h2 {
+  font-size: 39px;
+}
 
 
 /* Contenido que aparece sobre el video */

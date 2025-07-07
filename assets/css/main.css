@@ -237,6 +237,10 @@ h6 {
 ------------------------------*/
 .scrolled .header {
   --background-color: rgba(67, 0, 255, 0.12);
+  margin-left: 7%;
+  margin-right: 7%;
+  border-radius: 100px;
+  top: 12px;
 }
 
 /*--------------------------------------------------------------
@@ -1426,8 +1430,9 @@ margin-bottom: -300px;
 .stats {
   position: relative;
   padding: 80px 0;
-  background: url("../img/stats-bg.png") center center no-repeat;
+  background-color: #42128e ;
   background-size: cover;
+  border-radius: 261px;
 }
 
 .stats:before {

@@ -179,7 +179,7 @@ h6 {
 .header .logo img {
   max-height: 36px;
   margin-right: 8px;
-  margin-left: 25px
+  margin-left: 25px;
 }
 
 .header .logo h1 {
@@ -228,8 +228,9 @@ h6 {
     border: none;
     padding: 21;
     cursor: pointer;
-  color: #ffffff;
-  margin-right: 20px
+  color: #d5d5d5;
+  margin-right: 20px;
+  margin-left: 18px;
 }
 
 
@@ -244,7 +245,6 @@ background: radial-gradient(
   margin-left: 7%;
   margin-right: 7%;
   top: 12px;
-  box-shadow: 0px 1px 6px rgba(64, 64, 64, 0.28);
 }
 
 /* Global Header on Scroll
@@ -522,23 +522,24 @@ background: radial-gradient(
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
-.footer {
-  color: var(--default-color);
-  background: linear-gradient(45deg, var(--background-color) 0%, color-mix(in srgb, var(--surface-color), transparent 10%) 100%), center center no-repeat;
-  background-size: cover;
-  font-size: 14px;
-  padding-bottom: 50px;
-  position: relative;
-}
 
 .footer .footer-top {
   padding-top: 50px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
+.footer-about .logo img {
+  margin: 3px;
+  margin-bottom: 40px;
+}
+
+.col-lg-5 col-md-12 footer-about p {
+margin-bottom: 50px;
+}
+
 .footer .footer-about .logo {
   line-height: 1;
-  margin-bottom: 25px;
+
 }
 
 .footer .footer-about .logo img {
@@ -586,7 +587,8 @@ background: radial-gradient(
 }
 
 .footer .footer-links {
-  margin-bottom: 36px;
+  margin-bottom: 50px;
+  margin-left: 100px
 }
 
 .footer .footer-links ul {
@@ -598,17 +600,21 @@ background: radial-gradient(
 .footer .footer-links ul i {
   padding-right: 2px;
   font-size: 12px;
-  line-height: 0;
+  line-height: 4;
 }
 
 .footer .footer-links ul li {
-  padding: 10px 0;
+  padding: 13px 18;
   display: flex;
   align-items: center;
 }
 
 .footer .footer-links ul li:first-child {
-  padding-top: 0;
+  padding-top: 3;
+}
+
+.footer-links ul li {
+  margin-bottom: 16px; /* Ajustá el valor según el espacio que quieras */
 }
 
 .footer .footer-links ul a {
@@ -621,8 +627,9 @@ background: radial-gradient(
   color: var(--accent-color);
 }
 
-.footer .footer-contact p {
+.footer .footer-contact p .footer-contact h4 {
   margin-bottom: 5px;
+  margin-left: 50px
 }
 
 .footer .copyright {
@@ -638,6 +645,11 @@ background: radial-gradient(
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* tarjeta refe */
@@ -657,6 +669,8 @@ background: radial-gradient(
   display: flex;
   justify-content: center;
 }
+
+
 
 /* Tarjeta visual centrada */
 .footer-card {
@@ -741,88 +755,18 @@ background: radial-gradient(
 .footer-nav a {
   margin-right: 20px;
   color: #ccc;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-.footer-nav a:hover {
-  color: white;
-}
-
-/* Botón derecha */
-.cta {
-  text-align: right;
-}
-
-.cta p {
-  font-size: 0.85rem;
-  margin-bottom: 8px;
-  color: #ccc;
-}
-
-.waitlist-btn {
-  background: white;
-  color: black;
-  border: none;
-  padding: 10px 22px;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.waitlist-btn:hover {
-  background: #eaeaea;
-}
-
-/* Parte central */
-.footer-middle {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.footer-middle a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
-}
-
-.footer-middle a:hover {
-  color: #aaa;
 }
 
 /* Parte inferior */
 .footer-bottom {
+  font-size: 15px;
   text-align: center;
+  margin-top: 75px;
 }
 
-.brand {
-  font-size: 3.2rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  background: linear-gradient(90deg, #ffffff, #c9a0ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
-}
-
-.legal {
-  font-size: 0.75rem;
-  color: #aaa;
-}
-
-.legal a {
-  color: #888;
-  text-decoration: none;
-  margin-left: 10px;
-}
-
-.legal a:hover {
-  color: white;
-}
 
 
 /*--------------------------------------------------------------
@@ -965,11 +909,7 @@ section,
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
-.section-title {
-  text-align: center;
-  padding-bottom: 60px;
-  position: relative;
-}
+
 
 .section-title h2 {
   font-size: 32px;
@@ -1641,6 +1581,12 @@ margin-bottom: -300px;
   transition: transform 3.3s ease;
 }
 
+.bateria, .motor, .paquete-tecnico, .gestos {
+max-height: 50px;
+margin-left: 10px;
+margin-bottom: 8%;
+}
+
 .info-item:hover {
   transform: translateY(-6px);
 }
@@ -1653,8 +1599,8 @@ margin-bottom: -300px;
 
 /* Imagen de la derecha */
 .contenido-scroll img {
-  max-width: 100%;
-  margin-left: 60px;
+  max-width: 130%;
+  margin-left: 0px;
 }
 
 /* Animación opcional */
@@ -1717,6 +1663,164 @@ margin-bottom: -300px;
     display: block;
     width: 200%;
     max-width: 400px;
+  }
+}
+
+
+
+
+
+/* MODO DE USO*/
+
+.modo-card {
+  background-color: rgb(56, 56, 56);
+  border-radius: 25px;
+  margin: 150px;
+  padding: 150px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.titulouso {
+  text-align: left;
+  position: relative;
+  font-size: 47px;
+  color: linear-gradient (#773ebc, rgba(105, 99, 249, 0.97));
+  margin-bottom: 25px;
+}
+
+.gradiente-1 {
+  background: linear-gradient(90deg, #0f86b9, #723091); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 41px rgba(96, 154, 213, 0.13);
+  
+}
+
+
+.modo-card::before {
+  content: "";
+  position: absolute;
+  bottom: -80%;
+  left: -40%;
+  width: 240%;
+  height: 240%;
+  background-color: rgba(222, 222, 222, 0.88);
+  filter: blur(160px);
+  z-index: 0;
+}
+
+
+.modo-card > .paso {
+  position: relative;
+  z-index: 1;
+}
+
+
+.paso {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 80px;
+    color: #111111
+}
+
+.paso-2 {
+  flex-direction: row-reverse;
+   
+}
+
+.textopaso1 h3 {
+  color: #2c2c2c;
+}
+
+
+.textopaso1, .imagencelu {
+
+  padding-right: 75px;
+  flex: 1 1 500px;
+    color: #111111;
+}
+
+.textopaso1 {
+    color: rgb(17, 17, 17);
+    margin-left: 70px;
+}
+
+
+.imagencelu img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
+    margin-left: 100px
+}
+
+.imagencelu1 img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
+}
+
+.descargar-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #239fd3, #723091);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.descargar-btn:hover {
+  background-color: #7145b6;
+}
+
+@media (max-width: 768px) {
+  .modo-card {
+    padding: 40px 20px;
+  }
+
+  .paso,
+  .paso-2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textopaso1, .imagencelu {
+    flex: 1 1 100%;
+    padding: 0 0px;
+  }
+
+  .textopaso1 h3 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+  }
+
+  .textopaso1 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+
+  .imagencelu img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .descargar-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }
 

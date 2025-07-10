@@ -1624,7 +1624,7 @@ margin-bottom: 8%;
 
 @media (max-width: 768px) {
   .bloque-video-scroll {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     
   }
 
@@ -1671,6 +1671,18 @@ margin-bottom: 8%;
     width: 200%;
     max-width: 400px;
   }
+  
+  .bateria,
+  .motor,
+  .paquete-tecnico,
+  .gestos {
+    padding-right: 2.2rem;
+    max-height: 40px;;           /* Elimina restricción de altura */
+    margin-bottom: 6%;
+    display: block;             /* Asegura layout vertical si están en horizontal */
+    text-align: center;         /* Opcional: centra contenido interno */
+  }
+
 }
 
 

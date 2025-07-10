@@ -1676,7 +1676,7 @@ margin-bottom: 8%;
   .motor,
   .paquete-tecnico,
   .gestos {
-    padding-right: 2.2rem;
+    padding-right: 4.4rem;
     max-height: 40px;;           /* Elimina restricción de altura */
     margin-bottom: 6%;
     display: block;             /* Asegura layout vertical si están en horizontal */

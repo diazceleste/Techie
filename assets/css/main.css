@@ -1787,33 +1787,38 @@ margin-bottom: 8%;
 
 @media (max-width: 768px) {
   .modo-card {
-    padding: 40px 20px;
+    margin: 40px 20px; /* Reducido */
+    padding: 40px 20px; /* Ajustado para que no se desborde */
+    border-radius: 20px;
   }
 
   .paso,
   .paso-2 {
-    flex-direction: column;
+    flex-direction: column; /* Apila el texto y la imagen */
+    align-items: center;
     text-align: center;
+    gap: 40px;
   }
 
-  .textopaso1, .imagencelu {
+  .textopaso1,
+  .imagencelu {
     flex: 1 1 100%;
-    padding: 0 0px;
+    padding: 0 10px;
+    margin: 0;
   }
 
   .textopaso1 h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: 20px;
+    color: #773ebc; /* Reafirmar visibilidad */
   }
 
   .textopaso1 p {
     font-size: 1rem;
     line-height: 1.6;
-    margin-top: 15px;
   }
 
   .imagencelu img {
-    width: 100%;
     max-width: 300px;
     margin: 0 auto;
   }
@@ -1823,7 +1828,13 @@ margin-bottom: 8%;
     padding: 10px 20px;
     font-size: 0.9rem;
   }
+
+  .titulouso {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
+
 
 
 

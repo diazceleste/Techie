@@ -1755,7 +1755,7 @@ margin-bottom: 8%;
 }
 
 .textopaso1 h3 {
-  color: #2c2c2c;
+  color: #1f1f1f;
 }
 
 
@@ -1800,7 +1800,7 @@ margin-bottom: 8%;
 }
 
 .descargar-btn:hover {
-  background-color: #7145b6;
+  background-color: #370b7c;
 }
 
 @media (max-width: 768px) {
@@ -1828,7 +1828,7 @@ margin-bottom: 8%;
   .textopaso1 h3 {
     font-size: 1.4rem;
     margin-top: 20px;
-    color: #773ebc; /* Reafirmar visibilidad */
+    color: #333333; /* Reafirmar visibilidad */
   }
 
   .textopaso1 p {

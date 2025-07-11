@@ -658,9 +658,7 @@ margin-bottom: 50px;
 .super-footer {
     background: radial-gradient(
     ellipse at bottom right,
-    rgba(151, 183, 255, 0.92) -3%,
-    rgba(113, 96, 242, 0.83) 3%,
-    rgba(77, 39, 123, 0.88) 40%,
+    rgb(56, 56, 56) -3%,
     #111111 69%
   );
   backdrop-filter: blur(1px);

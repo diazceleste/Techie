@@ -1919,6 +1919,15 @@ section,
   white-space: nowrap;
 }
 
+@media screen and (min-width: 1024px) {
+  .seccion-textomob,
+  .linea4,
+  .linea-fondo2 {
+    display: none !important;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # About Section

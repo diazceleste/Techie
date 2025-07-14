@@ -1383,11 +1383,8 @@ section,
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
-  position: relative;
+  position: relative; /* Importante para contener el ::before */
   z-index: 1;
-  left: 0;
-  right: 0;
-  top: 0;
 }
 
 .imagen-redonda3 img,
@@ -1396,7 +1393,37 @@ section,
   height: auto;
   object-fit: contain;
   aspect-ratio: 1 / 1;
+  border-radius: 20px; /* opcional si quieres bordes redondeados */
 }
+
+/* ----- GRADIENTE PARA LA PRIMERA ----- */
+.imagen-redonda3::before {
+  content: "";
+  position: absolute;
+  width: 381px;      
+  height: 522px; 
+  background: radial-gradient(circle at 50% 50%, #3f007f 0%, transparent 70%);
+  top: 49%;        
+  left: 18%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* GRADIENTE SEGUNDA */
+.imagen-redonda4::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 413px;
+  background: radial-gradient(circle at 80% 45%, #3f007f 0%, transparent 50%);
+  top: 50%;
+  right: -65%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
 
 .gradiente2 {
   background: linear-gradient(90deg, #29ABE2, #723091);
